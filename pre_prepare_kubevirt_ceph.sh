@@ -38,6 +38,9 @@ sync_go_repo_and_patch github.com/chunfuwen/manifests https://github.com/chunfuw
 #copy manifest into dev-scripts folder
 cp -r ${GOPATH}/src/github.com/chunfuwen/manifests ~/dev-scripts
 
+#copy shell scripts into  dev-scripts folder
+cp  ${GOPATH}/src/github.com/chunfuwen/manifestsi/*.sh  ~/dev-scripts
+
 
 # Install rook repository
 sync_repo_and_patch github.com/rook/rook https://github.com/rook/rook.git
